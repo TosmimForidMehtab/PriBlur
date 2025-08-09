@@ -27,10 +27,10 @@
   "commands": {
     "toggle-peek": {
       "suggested_key": {
-        "default": "Ctrl+Shift+P",
-        "mac": "Command+Shift+P"
+        "default": "Alt+P",
+        "mac": "Alt+P"
       },
-      "description": "Temporarily peek through the blurs"
+      "description": "Toggle peek mode"
     }
   },
   "web_accessible_resources": [
