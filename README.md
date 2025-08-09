@@ -14,14 +14,17 @@ This browser extension gives you the power to hide sensitive information on any 
 
 Our goal is to provide a tool that is both easy to use and completely secure, running entirely on your computer without ever touching your data.
 
+![Screenshot 1](./static/s1.PNG)
+![Screenshot 1](./static/s2.PNG)
+
 ## ✨ Key Features
 
-* 🎨 **Multiple Blur Shapes:** Choose between Rectangle, Circle, or a freeform Custom Shape tool.
-* 🖱️ **Interactive Editing:** All blur regions are draggable and can be removed instantly with the Eraser tool.
-* 📄 **Sticks to Content:** Blurs scroll with the page, ensuring they always cover the intended element.
-* 💾 **Save Your Layouts:** Create "Profiles" to instantly load specific blur setups for different tasks (e.g., "Work Meeting," "Personal Project").
-* 👁️ **Toggle Mode:** Temporarily disable all blurs with a hotkey (**`Alt+P`**) to quickly see the content underneath.
-* 🔒 **100% Private:** The extension is fully self-contained. Your data, Browse activity, or blur patterns are never collected or transmitted anywhere.
+-   🎨 **Multiple Blur Shapes:** Choose between Rectangle, Circle, or a freeform Custom Shape tool.
+-   🖱️ **Interactive Editing:** All blur regions are draggable and can be removed instantly with the Eraser tool.
+-   📄 **Sticks to Content:** Blurs scroll with the page, ensuring they always cover the intended element.
+-   💾 **Save Your Layouts:** Create "Profiles" to instantly load specific blur setups for different tasks (e.g., "Work Meeting," "Personal Project").
+-   👁️ **Toggle Mode:** Temporarily disable all blurs with a hotkey (**`Alt+P`**) to quickly see the content underneath.
+-   🔒 **100% Private:** The extension is fully self-contained. Your data, Browse activity, or blur patterns are never collected or transmitted anywhere.
 
 ## 🚀 How to Use
 
@@ -35,20 +38,20 @@ Our goal is to provide a tool that is both easy to use and completely secure, ru
 
 This is your main control center for creating and managing blurs.
 
-| Icon | Tool | Description |
-| :--- | :--- | :--- |
-| ➕ **Add** | Activate Drawing | The main button to enter drawing mode. It defaults to the Rectangle shape. |
-| ⬜ **Rectangle** | Shape Tool | Click and drag on the page to create a rectangular blur. |
-| ⚪ **Circle** | Shape Tool | Click and drag on the page to create a circular or elliptical blur. |
-| ✍️ **Draw** | Custom Shape | Draw a freeform shape to blur a specific, irregular area. |
-| 🧽 **Eraser** | Eraser Tool | Select this, then click on any blur region to delete it. |
-| ✔️ **Finish** | Finish Editing | Hides the toolbar but keeps your blurs active. |
+| Icon             | Tool             | Description                                                                |
+| :--------------- | :--------------- | :------------------------------------------------------------------------- |
+| ➕ **Add**       | Activate Drawing | The main button to enter drawing mode. It defaults to the Rectangle shape. |
+| ⬜ **Rectangle** | Shape Tool       | Click and drag on the page to create a rectangular blur.                   |
+| ⚪ **Circle**    | Shape Tool       | Click and drag on the page to create a circular or elliptical blur.        |
+| ✍️ **Draw**      | Custom Shape     | Draw a freeform shape to blur a specific, irregular area.                  |
+| 🧽 **Eraser**    | Eraser Tool      | Select this, then click on any blur region to delete it.                   |
+| ✔️ **Finish**    | Finish Editing   | Hides the toolbar but keeps your blurs active.                             |
 
 ### 3. Managing Your Blurs
 
-* **To Draw:** Make sure a shape tool (like Rectangle) is active. Click and drag on the page to create your blur.
-* **To Move:** Simply click and drag any existing blur region to a new position.
-* **To Add More:** If you've finished editing, click the extension icon and select **"Add More"** to bring the toolbar back.
+-   **To Draw:** Make sure a shape tool (like Rectangle) is active. Click and drag on the page to create your blur.
+-   **To Move:** Simply click and drag any existing blur region to a new position.
+-   **To Add More:** If you've finished editing, click the extension icon and select **"Add More"** to bring the toolbar back.
 
 ### 4. Using Profiles to Save Time
 
@@ -83,6 +86,7 @@ This is an open-source project. If you find a bug, have a feature request, or wo
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+
 <div align="center">
   <small>Copyright © 2025 Tosmim. All Rights Reserved.</small>
 </div>
