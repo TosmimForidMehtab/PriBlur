@@ -1,0 +1,108 @@
+/* --- CONFIGURATION UI --- */
+#privacy-blur-config-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(49, 50, 68, 0.3);
+    z-index: 2147483646;
+}
+
+#privacy-blur-toolbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 2147483647;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #45475a;
+}
+
+#privacy-blur-toolbar .tool-group {
+    display: flex;
+    gap: 5px;
+}
+
+#privacy-blur-toolbar button {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+#privacy-blur-toolbar button:hover {
+    background-color: #45475a;
+    color: #89b4fa;
+}
+
+#privacy-blur-toolbar button.active {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border-color: #89b4fa;
+}
+
+#privacy-blur-toolbar button#tool-eraser.active {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+    border-color: #f38ba8;
+}
+
+#privacy-blur-toolbar .separator {
+    width: 1px;
+    height: 25px;
+    background-color: #45475a;
+}
+
+#privacy-blur-toolbar .finish-btn {
+    background-color: #a6e3a1;
+    color: #1e1e2e;
+}
+
+/* --- BLUR OVERLAY --- */
+.privacy-blur-overlay-container {
+    /* This is the key change to make the blur scroll with the page */
+    position: absolute; 
+    box-sizing: border-box;
+    z-index: 2147483645;
+    pointer-events: none;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background-color: rgba(100, 100, 100, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.privacy-blur-overlay-container.dragging {
+    box-shadow: 0 0 15px 2px rgba(137, 180, 250, 0.5);
+    cursor: move;
+}
+
+/* --- VISUAL INDICATOR --- */
+#privacy-blur-indicator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f38ba8;
+    color: #1e1e2e;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: sans-serif;
+    z-index: 2147483640;
+    opacity: 0.8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

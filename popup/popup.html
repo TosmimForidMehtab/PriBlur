@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriBlur</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PriBlur</h1>
+            <div class="toggle-switch">
+                <input type="checkbox" id="master-enable" checked>
+                <label for="master-enable"></label>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <div id="status-idle">
+                <p>Start a session to blur elements on this page.</p>
+                <button id="start-session-btn" class="btn btn-primary">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Start Blurring Session
+                </button>
+            </div>
+            <div id="status-active" style="display: none;">
+                <p class="active-indicator">
+                    <i class="fa-solid fa-circle-check"></i> Blurring session is active.
+                </p>
+                <div class="button-group">
+                    <button id="add-blur-btn" class="btn">
+                        <i class="fa-solid fa-plus"></i> Add More
+                    </button>
+                     <button id="clear-blurs-btn" class="btn btn-danger">
+                        <i class="fa-solid fa-trash"></i> Clear All
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <hr>
+
+        <section class="settings-section">
+            <h3><i class="fa-solid fa-sliders"></i> Settings</h3>
+            <div class="setting-item">
+                <label for="blur-intensity">Blur Intensity</label>
+                <input type="range" id="blur-intensity" min="4" max="40" value="16">
+            </div>
+        </section>
+        
+        <hr>
+
+        <section class="profiles-section">
+            <h3><i class="fa-solid fa-bookmark"></i> Profiles</h3>
+            <div class="profile-manager">
+                <select id="profiles-dropdown">
+                    <option value="">Load a profile...</option>
+                </select>
+                <div class="profile-actions">
+                    <input type="text" id="profile-name-input" placeholder="New profile name...">
+                    <button id="save-profile-btn" class="btn-icon" title="Save Current Blurs as New Profile">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                    </button>
+                    <button id="delete-profile-btn" class="btn-icon btn-icon-danger" title="Delete Selected Profile">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Peek hotkey: <kbd>Ctrl+Shift+P</kbd></p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
